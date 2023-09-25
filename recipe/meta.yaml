@@ -1,5 +1,5 @@
 {% set name = "hubspot-api-client" %}
-{% set version = "8.1.0" %}
+{% set version = "8.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hubspot-api-client-{{ version }}.tar.gz
-  sha256: e8c25c2a12ab3801a6ab051ad7b25766a2e743928ed6ce9a309672c53b973044
+  sha256: beedfeade5e335ba251b4c0e7bc93f3f7ac63f00bf52ef94d72d3af2d73cfc8c
 
 build:
   noarch: python
