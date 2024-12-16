@@ -18,16 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - six >=1.9
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - urllib3 >=1.15
     - six >=1.10
     - certifi
     - python-dateutil
+    - requests
 
 test:
   imports:
@@ -36,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/HubSpot/hubspot-api-python
